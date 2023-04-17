@@ -140,6 +140,7 @@ nav {
     height: 80px;
     width: 100%;
     align-items: center;
+    padding: 0 40px;
 }
 
 .nav .logo {
@@ -319,7 +320,6 @@ nav .logo img {
 /*#region QUESTIONS */
 .questions
 {
-    width: 100%;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -555,4 +555,191 @@ footer
 {
     color: #c4302b;
 }
+/*#endregion*/
+
+/*#region RESPONSIVE*/
+/*#region 800PX*/
+@media screen and (max-width:800px)
+{
+    .title
+    {
+        font-size: 45px;
+    }
+    /*#region HEADER*/
+    .header-content
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .header-content > img
+    {
+        width: 400px;
+    }
+
+    .header-text
+    {
+        margin: 0;
+    }
+    /*#endregion*/
+    /*#region ABOUT ME*/
+    .card
+    {
+        width: 45%;
+    }
+    /*#endregion*/
+    /*#region QUESTIONS*/
+    .questions
+    {
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .questions > img
+    {
+        width: 400px;
+    }
+    /*#endregion*/
+    /*#region RESULTS*/
+    .content-results
+    {
+        flex-direction: column-reverse;
+    }
+
+    .results-text
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;        
+    }
+
+    .results-text a
+    {
+        margin-bottom: 30px;
+    }
+
+    .numbers
+    {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .results-text
+    {
+        width: 100%;
+    }
+    /*#endregion*/
+    /*#region SERVICES*/
+    .services
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-skills
+    {
+        margin-bottom: 40px;
+    }
+
+    .box-skills h4
+    {
+        width: 500px;
+    }
+
+    .services img
+    {
+        width: 400px;
+    }
+    /*#endregion*/
+    /*#region FOOTER*/
+    footer
+    {
+        justify-content: space-evenly;
+    }
+
+    .partFooter
+    {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    /*#endregion*/
+}
+/*#endregion*/
+/*#region 600PX*/
+@media screen and (max-width:600px)
+{
+    .title
+    {
+        font-size: 35px;
+    }
+
+    h1
+    {
+        font-size: 40px;
+    }
+
+    .header-content
+    {
+        height: 650px;
+    }
+
+    .nav
+    {
+        padding: 0 10px;
+    }
+
+    .header-content > img
+    {
+        width: 200px;
+    }
+
+    .header-urls
+    {
+        display: none;
+    }
+
+    .hamburguer
+    {
+        display: block;
+    }
+
+    .card
+    {
+        width: 95%;
+    }
+
+    .questions > img
+    {
+        width: 200px;
+    }
+
+    .numbers .number
+    {
+        width: 95%;
+    }
+
+    .results-text h4
+    {
+        font-size: 35px;
+    }
+
+    .services img
+    {
+        width: 200px;
+    }
+    
+    .box-skills h4
+    {
+        width: 100%;
+    }
+
+    .partFooter
+    {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+}
+/*#endregion*/
 /*#endregion*/
